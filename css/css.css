@@ -203,14 +203,12 @@ h2{
 
 .form-portfolio, .form-contact{
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: row;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #13243979;
     padding: 40px;
-    
-    
 }
 
 .form-projet{
