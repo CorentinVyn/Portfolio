@@ -283,7 +283,7 @@ h2{
     transform: scale(0.8);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    overflow:scroll;
+    overflow-y:scroll;
 }
 
 .modal h1{
