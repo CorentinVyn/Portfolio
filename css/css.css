@@ -460,9 +460,7 @@ ul{
         width: 80%;
     }
     .fleche{
-        position:absolute;
-        right: 10px;
-        top:750px;
+        display:none;
     }
 
     .skill {
