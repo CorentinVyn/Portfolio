@@ -6,39 +6,46 @@
     
 }
 
-body{
+body {
     background-color: #1E4D6B;
+    font-size: 16px;
+    width: 100%;
 }
 
-header h1{
-    min-width: 1200px;
+
+
+header {
+    width: 100%;
+    background-color: #0f1d2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
     width: 100%;
     background-color: #203F63;
     padding: 20px;
-    margin-top:-10px;
+    margin-top: -10px;
     box-shadow: 0px 0px 10px 0px black;
     font-size: 35px;
     font-weight: normal;
+    text-align: center;
 }
 
-header {
-    min-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #0f1d2e;
-}
-
-.resize {
+.form-nav {
     background-image: url("../img/photo_header1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
     width: 1200px;
-    height: 600px; /* Hauteur fixe du conteneur */
+    min-width: 769px;
     margin: 0 auto;
 }
 
 .computer{
     position: relative;
-    left: 462px;
+    left: 460px;
     top:65px;
     width: 340px;
     transition: transform 0.3s ease;
@@ -70,18 +77,18 @@ header {
 
 
 
-main{
- 
-   min-width: 1200px;
-   height: 100%;
-
+main {
+    width: 100%;
+    height: 100%;
 }
 
-.form-profil{
+.form-profil {
     display: flex;
     gap: 20px;
     background-color: #13243979;
     align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
 }
 
 .form-profil img{
@@ -123,7 +130,6 @@ h2{
 .form-experience {
     display: flex;
     flex-direction: row;
-    min-width: 1200px;
     width: 80%;
     text-align: center;
     margin: 0 auto;
@@ -139,7 +145,7 @@ h2{
 }
 
 .form-experience p{
-    width: 350px;
+
     font-size: 20px;
 }
 
@@ -225,6 +231,8 @@ h2{
     transition: transform 0.2s ease-out;
     perspective: 800px;
     transform-style: preserve-3d; /* Important pour l'effet 3D */
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .card:hover{
@@ -390,7 +398,7 @@ ul{
 
 .contact{
     width: 80%;
-    min-width: 960px;
+
 }
 
 .sizelogo{
@@ -407,5 +415,88 @@ ul{
 .form-contact{
     display: flex;
     flex-direction: row;
+}
 
+/* Media Queries pour la responsivité */
+@media screen and (max-width: 768px) {
+    .form-experience p, p{
+        font-size: 12px;
+    }
+    header h1, main h1 {
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+    .resize {
+        display: none;
+    }
+
+    .form-profil {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .form-professionnelle, .form-scolaire{
+        gap:30px;
+    }
+
+    .form-experience, .form-projet, .form-contact {
+        flex-direction: column;
+        align-items: center;
+        gap:60px;
+    }
+
+    .form-experience{
+        flex-direction: column-reverse;
+    }
+
+    .form-skill{
+        gap:40px;
+        width: 80%;
+    }
+    .fleche{
+        position:absolute;
+        right: 10px;
+        top:750px;
+    }
+
+    .skill {
+        width: 80%;
+        white-space: nowrap;
+    }
+    .logo img{
+        height: 60px;
+    }
+
+    .bandeau{
+        height: 110px;
+    }
+
+    .form-contact{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    ul{
+        flex-wrap: wrap;
+        gap:15px;
+    }
+
+    .modal-content{
+        overflow: scroll;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card img{
+        width: 100%;
+        height: 230px;
+    }
+    .card p{
+        font-size: 16px;
+    }
 }
