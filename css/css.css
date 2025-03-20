@@ -84,7 +84,6 @@ main {
 
 .form-profil {
     display: flex;
-    gap: 20px;
     background-color: #13243979;
     align-items: center;
     flex-wrap: nowrap;
@@ -98,6 +97,8 @@ main {
 .form-profil .text-pres{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 15px;
 }
 
 .profil, .skill, .portfolio, .contact{
@@ -213,8 +214,10 @@ h2{
 
 .form-projet{
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-between;
+    gap:40px;
+    flex-wrap: wrap;
+    text-align: center;
 
 }
 .card img{
@@ -283,7 +286,7 @@ h2{
     transform: scale(0.8);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    overflow-y:scroll;
+    overflow-y: scroll;
 }
 
 .modal h1{
