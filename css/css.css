@@ -8,7 +8,7 @@
 
 body {
     background-color: #1E4D6B;
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
 }
 
@@ -145,10 +145,10 @@ h2{
     align-items: center;
 }
 
-.form-experience p{
-
-    font-size: 20px;
+.form-scolaire p, .form-professionnelle p{
+    width:70%;
 }
+
 
 .fleche{
     height: 550px;
@@ -421,8 +421,8 @@ ul{
 
 /* Media Queries pour la responsivité */
 @media screen and (max-width: 768px) {
-    .form-experience p, p{
-        font-size: 12px;
+    body{
+        font-size:16px;
     }
     header h1, main h1 {
         font-size: 20px;
