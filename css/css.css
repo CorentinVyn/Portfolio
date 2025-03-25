@@ -33,6 +33,9 @@ header h1 {
     text-align: center;
 }
 
+.text-pres p, .form-scolaire p, .form-professionnelle p {
+    font-size: 20px;
+}
 .form-nav {
     background-image: url("../img/photo_header1.png");
     background-repeat: no-repeat;
